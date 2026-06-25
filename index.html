@@ -3,342 +3,163 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EJay Projects (Pty) Ltd | Engineering, Mining & Industrial Support</title>
-  <meta name="description" content="EJay Projects delivers engineering, mining support, industrial maintenance, fire protection systems, fuel and LPG infrastructure, and construction services across South Africa." />
-  <meta name="theme-color" content="#0b0d12" />
+  <title>EJay Projects (Pty) Ltd | Engineering, Mining & Industrial Support Solutions</title>
+  <meta name="description" content="EJay Projects delivers multidisciplinary engineering, mining support, fire protection, industrial maintenance and infrastructure solutions across South Africa." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
   <header class="site-header">
-    <div class="container nav">
-      <a href="#top" class="brand" aria-label="EJay Projects home">
-        <img src="logo.png" alt="EJay Projects logo" />
-      </a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#industries">Industries</a>
-        <a href="#projects">Projects</a>
-        <a href="#resources">Resources</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
+    <a href="#top" class="brand"><img src="logo.png" alt="EJay Projects logo"></a>
+    <button class="nav-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <nav class="main-nav">
+      <a href="#top" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#industries">Industries</a>
+      <a href="#projects">Projects</a>
+      <a href="#resources">Resources</a>
+      <a href="#compliance">Safety & Compliance</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="header-cta" href="#quote">Request a Quote</a>
   </header>
 
-  <main id="main">
-    <section id="top" class="hero section-dark">
-      <div class="hero-overlay"></div>
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <span class="eyebrow">Engineering • Mining • Industrial Support</span>
-          <h1>Engineering solutions that keep industry moving.</h1>
-          <p>
-            EJay Projects delivers multidisciplinary engineering, mining support, fire protection systems,
-            industrial maintenance, fuel and LPG infrastructure, and construction solutions across South Africa.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#quote">Request a Quote</a>
-            <a class="btn btn-secondary" href="ejay-projects-company-profile.pdf" target="_blank" rel="noopener">Download Company Profile</a>
-          </div>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <p class="kicker">Built for industry. Engineered to deliver.</p>
+        <h1>Engineering, Mining & Industrial Support <span>Solutions</span></h1>
+        <p class="hero-text">Delivering multidisciplinary engineering, maintenance, fire protection and infrastructure solutions to mining, industrial and high-risk environments throughout South Africa.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#quote">▣ Request a Quote</a>
+          <a class="btn btn-secondary" href="ejay-projects-company-profile.pdf" target="_blank" rel="noopener">⇩ Download Company Profile</a>
         </div>
+        <div class="hero-badges">
+          <article><strong>100%</strong><span>Black-Owned Business</span></article>
+          <article><strong>Level 1</strong><span>B-BBEE Contributor</span></article>
+          <article><strong>Turnkey</strong><span>From Planning to Commissioning</span></article>
+          <article><strong>Safety Focused</strong><span>Our Core Commitment</span></article>
+        </div>
+      </div>
+      <aside class="hero-panel">
+        <div><strong>100%</strong><span>Black-Owned Business</span></div>
+        <div><strong>Level 1</strong><span>B-BBEE Contributor</span></div>
+        <div><strong>Turnkey</strong><span>From Planning to Commissioning</span></div>
+        <div><strong>Safety Focused</strong><span>Our Core Commitment</span></div>
+      </aside>
+    </section>
 
-        <div class="hero-panel reveal" aria-label="Company highlights">
-          <div class="hero-card large">
-            <small>Strategic Positioning</small>
-            <strong>Built for demanding mining, industrial and high-risk operating environments.</strong>
-          </div>
-          <div class="metric-grid">
-            <div class="metric-card"><strong>100%</strong><span>Black-owned</span></div>
-            <div class="metric-card"><strong>Level 1</strong><span>B-BBEE contributor</span></div>
-            <div class="metric-card"><strong>2016</strong><span>Established</span></div>
-            <div class="metric-card"><strong>Turnkey</strong><span>Planning to handover</span></div>
-          </div>
-        </div>
+    <section id="services" class="service-strip" aria-label="Core services">
+      <article style="--bg:url('assets/mining.jpg')"><div class="icon">⚙</div><h3>Mining Support</h3><p>Reliable support services that keep mining operations moving.</p><a href="#quote">Learn More →</a></article>
+      <article style="--bg:url('assets/industrial.jpg')"><div class="icon">⚙</div><h3>Industrial Maintenance</h3><p>Planned, preventative and corrective maintenance solutions.</p><a href="#quote">Learn More →</a></article>
+      <article style="--bg:url('assets/fire.jpg')"><div class="icon">🔥</div><h3>Fire Protection Systems</h3><p>Design, supply, installation and maintenance of fire protection systems.</p><a href="#quote">Learn More →</a></article>
+      <article style="--bg:url('assets/fuel.jpg')"><div class="icon">💧</div><h3>Fuel & LPG Infrastructure</h3><p>Fuel and LPG storage, distribution and associated infrastructure.</p><a href="#quote">Learn More →</a></article>
+      <article style="--bg:url('assets/construction.jpg')"><div class="icon">🛠</div><h3>Construction & Civil Works</h3><p>Civil, structural and building works delivered with excellence.</p><a href="#quote">Learn More →</a></article>
+      <article style="--bg:url('assets/shutdown.jpg')"><div class="icon">☊</div><h3>Shutdown & Project Support</h3><p>Shutdowns, turnarounds and specialist project support services.</p><a href="#quote">Learn More →</a></article>
+    </section>
+
+    <section id="about" class="about-band">
+      <div class="about-copy">
+        <p class="kicker">Who we are</p>
+        <h2>Engineering Solutions That Keep Industry Moving</h2>
+        <p>Established in 2016, EJay Projects has grown into a specialist engineering and infrastructure company with a strong track record in mining, industrial and energy sectors.</p>
+        <p>We combine technical expertise, practical solutions and a safety-first approach to deliver projects that create long-term value for our clients and communities.</p>
+        <a class="btn btn-outline" href="#about-more">Read More About EJay →</a>
+      </div>
+      <div class="about-stats">
+        <article><strong>2016</strong><span>Established</span></article>
+        <article><strong>100%</strong><span>Black-Owned</span></article>
+        <article><strong>Level 1</strong><span>B-BBEE Contributor</span></article>
+        <article><strong>Nationwide</strong><span>Operational Footprint</span></article>
       </div>
     </section>
 
-    <section id="about" class="section">
-      <div class="container split">
-        <div class="section-intro reveal">
-          <span class="section-tag">About EJay Projects</span>
-          <h2>A practical engineering partner structured for safe execution and sustainable growth.</h2>
-        </div>
-        <div class="content-card reveal">
-          <p>
-            Established in 2016, EJay Projects has developed from a construction-focused business into a
-            multidisciplinary engineering and infrastructure company serving public and private sector clients.
-          </p>
-          <p>
-            We combine hands-on execution, technical coordination, project discipline and responsive leadership to
-            support clients in environments where safety, uptime, compliance and delivery matter.
-          </p>
-          <div class="capability-strip">
-            <span>Owner-managed</span>
-            <span>Safety driven</span>
-            <span>Procurement ready</span>
-            <span>Responsive delivery</span>
-          </div>
-        </div>
+    <section id="industries" class="light-section">
+      <p class="kicker centered">Industries we serve</p>
+      <h2>Experience Across Key Sectors</h2>
+      <div class="industry-grid">
+        <article><img src="assets/mining.jpg" alt="Mining operations"><strong>Mining</strong></article>
+        <article><img src="assets/industrial.jpg" alt="Industrial plant"><strong>Industrial</strong></article>
+        <article><img src="assets/fuel.jpg" alt="Oil and gas tanks"><strong>Oil & Gas</strong></article>
+        <article><img src="assets/plant-bg.jpg" alt="Power and process facility"><strong>Power Generation</strong></article>
+        <article><img src="assets/construction.jpg" alt="Infrastructure works"><strong>Infrastructure</strong></article>
+        <article><img src="assets/fire.jpg" alt="Fire protection installation"><strong>High-Risk Facilities</strong></article>
       </div>
     </section>
 
-    <section id="services" class="section section-muted">
-      <div class="container">
-        <div class="section-heading reveal">
-          <span class="section-tag">Core Services</span>
-          <h2>Integrated services for industrial, mining and infrastructure clients.</h2>
-          <p>Our service model allows clients to source multiple technical capabilities from one responsive delivery partner.</p>
-        </div>
+    <section id="compliance" class="compliance-bar">
+      <article><strong>Level 1</strong><span>B-BBEE Contributor</span></article>
+      <article><strong>CIDB</strong><span>Registration Ready</span></article>
+      <article><strong>CSD</strong><span>Registered</span></article>
+      <article><strong>COIDA</strong><span>Compliant</span></article>
+      <article><strong>SABS</strong><span>Standards Aligned</span></article>
+      <a href="ejay-projects-company-profile.pdf" target="_blank" rel="noopener"><strong>Company Profile</strong><span>Download full profile →</span></a>
+    </section>
 
-        <div class="service-grid">
-          <article class="service-card reveal">
-            <div class="icon">01</div>
-            <h3>Mining & Industrial Support</h3>
-            <p>Operational support, site maintenance, shutdown assistance, equipment support and multidisciplinary teams for demanding environments.</p>
-          </article>
-          <article class="service-card reveal">
-            <div class="icon">02</div>
-            <h3>Fire Protection Systems</h3>
-            <p>Fire detection, alarms, sprinklers, hydrants, deluge, foam, pump sets, refurbishments, testing and commissioning support.</p>
-          </article>
-          <article class="service-card reveal">
-            <div class="icon">03</div>
-            <h3>Fuel, LPG & High-Risk Infrastructure</h3>
-            <p>Support for fuel, LPG and petrochemical environments including piping, pressure testing, maintenance and compliance support.</p>
-          </article>
-          <article class="service-card reveal">
-            <div class="icon">04</div>
-            <h3>Construction & Civil Works</h3>
-            <p>Civil works, infrastructure upgrades, refurbishments, site establishment, construction support and material supply.</p>
-          </article>
-          <article class="service-card reveal">
-            <div class="icon">05</div>
-            <h3>Maintenance & Shutdown Support</h3>
-            <p>Preventative maintenance, corrective work, emergency call-outs, planned shutdown support and site-based execution teams.</p>
-          </article>
-          <article class="service-card reveal">
-            <div class="icon">06</div>
-            <h3>Technical Procurement & Project Support</h3>
-            <p>Material sourcing, specialist supplier coordination, project administration, supervision and handover documentation.</p>
-          </article>
-        </div>
+    <section id="projects" class="section dark-section">
+      <div class="section-head">
+        <p class="kicker">Selected project experience</p>
+        <h2>Demonstrated capability without disclosing project values</h2>
+        <p>We show capability through client environment, scope, discipline and execution requirements.</p>
+      </div>
+      <div class="project-grid">
+        <article><h3>Easigas – Borbet Deluge System</h3><p>Industrial LPG facility</p><ul><li>Deluge system supply and installation support</li><li>Industrial fire protection integration</li><li>Hazardous area compliance support</li></ul></article>
+        <article><h3>Easigas – Cathodic Protection Works</h3><p>Industrial gas infrastructure facility</p><ul><li>Corrosion protection support works</li><li>Infrastructure integrity maintenance</li><li>Compliance-driven protection solutions</li></ul></article>
+        <article><h3>Easigas – Bemad Valve DN100 Installation</h3><p>LPG infrastructure</p><ul><li>Specialist valve supply and integration</li><li>Mechanical system support</li><li>Industrial infrastructure upgrade support</li></ul></article>
       </div>
     </section>
 
-    <section id="industries" class="section">
-      <div class="container split reverse">
-        <div class="content-card dark reveal">
-          <span class="section-tag">Industries Served</span>
-          <div class="pill-wrap">
-            <span class="pill">Mining</span>
-            <span class="pill">Petrochemical</span>
-            <span class="pill">Fuel & LPG</span>
-            <span class="pill">Power Generation</span>
-            <span class="pill">Manufacturing</span>
-            <span class="pill">Municipal Infrastructure</span>
-            <span class="pill">Commercial Facilities</span>
-            <span class="pill">Logistics & Storage</span>
-          </div>
-        </div>
-        <div class="section-intro reveal">
-          <span class="section-tag">Procurement Confidence</span>
-          <h2>Positioned for clients that require compliant, reliable and responsive contractors.</h2>
-          <p>
-            EJay Projects is suited to clients looking for a capable contractor that can respond quickly, work safely and
-            coordinate multidisciplinary scopes without unnecessary complexity.
-          </p>
-        </div>
+    <section id="resources" class="resources">
+      <div>
+        <p class="kicker">Resources</p>
+        <h2>Procurement-ready documents</h2>
+        <p>Download our company profile or request the latest compliance pack for tenders and supplier onboarding.</p>
       </div>
+      <a class="resource-card" href="ejay-projects-company-profile.pdf" target="_blank" rel="noopener"><strong>Company Profile</strong><span>Download PDF →</span></a>
+      <a class="resource-card" href="#quote"><strong>Compliance Pack</strong><span>Request documents →</span></a>
     </section>
 
-    <section class="section safety-band">
-      <div class="container safety-grid">
-        <div class="reveal">
-          <span class="section-tag">Safety & Compliance</span>
-          <h2>Built on disciplined site controls and compliance-driven execution.</h2>
-          <p>
-            We support a zero-harm culture through risk assessments, method statements, toolbox talks, competent supervision,
-            PPE compliance and structured handover processes.
-          </p>
-        </div>
-        <div class="check-grid reveal">
-          <span>SANS 10400-T</span>
-          <span>SANS 10139</span>
-          <span>SANS 10087</span>
-          <span>SANS 10131</span>
-          <span>NFPA Standards</span>
-          <span>OHSA Requirements</span>
-        </div>
+    <section id="quote" class="quote-section">
+      <div class="quote-copy">
+        <p class="kicker">Ready to start your next project?</p>
+        <h2>Let’s Build Something Great Together</h2>
+        <p>Tell us what support you need and our team will respond through admin@ejayprojects.com.</p>
       </div>
+      <form class="quote-form" id="quoteForm">
+        <input name="name" placeholder="Full name" required>
+        <input name="company" placeholder="Company name" required>
+        <input type="email" name="email" placeholder="Email address" required>
+        <input name="phone" placeholder="Phone / WhatsApp" required>
+        <select name="service" required>
+          <option value="">Service required</option>
+          <option>Mining Support</option><option>Industrial Maintenance</option><option>Fire Protection Systems</option><option>Fuel & LPG Infrastructure</option><option>Construction & Civil Works</option><option>Shutdown & Project Support</option><option>Other</option>
+        </select>
+        <input name="location" placeholder="Project location">
+        <textarea name="message" placeholder="Brief scope of work / enquiry" rows="5" required></textarea>
+        <p class="form-note">Need to send RFQ documents or drawings? Submit the form, then attach files to the email that opens.</p>
+        <button class="btn btn-primary" type="submit">Submit Request</button>
+      </form>
     </section>
 
-    <section id="projects" class="section section-muted">
-      <div class="container">
-        <div class="section-heading reveal">
-          <span class="section-tag">Selected Experience</span>
-          <h2>Project experience without unnecessary noise.</h2>
-          <p>We present experience by client, scope and capability demonstrated — not by project values.</p>
-        </div>
-
-        <div class="project-grid">
-          <article class="project-card reveal">
-            <small>Fire Protection / Industrial</small>
-            <h3>Easigas – Borbet Deluge System</h3>
-            <p>Supply and system-related works for a high-risk industrial fire protection environment.</p>
-            <div class="tags"><span>Deluge</span><span>High-risk</span><span>Industrial</span></div>
-          </article>
-          <article class="project-card reveal">
-            <small>Infrastructure Protection</small>
-            <h3>Easigas – Cathodic Protection Works</h3>
-            <p>Implementation support to protect infrastructure assets and strengthen long-term reliability.</p>
-            <div class="tags"><span>Protection</span><span>Supply</span><span>Support</span></div>
-          </article>
-          <article class="project-card reveal">
-            <small>Mechanical / Fire Systems</small>
-            <h3>Easigas – Bemad Valve DN100 Installation</h3>
-            <p>Specialist valve supply and integration support for critical fire protection infrastructure.</p>
-            <div class="tags"><span>Valve works</span><span>Integration</span><span>Mechanical</span></div>
-          </article>
-          <article class="project-card reveal">
-            <small>Pump Systems</small>
-            <h3>Easigas George – Jockey Pump Installation</h3>
-            <p>Fire pump system supply and support to improve system readiness and operational response.</p>
-            <div class="tags"><span>Pumps</span><span>Installation</span><span>Testing</span></div>
-          </article>
-          <article class="project-card reveal">
-            <small>Fire System Refurbishment</small>
-            <h3>Easigas Mafikeng – Sprinkler Refurbishment</h3>
-            <p>Sprinkler system refurbishment and maintenance support to extend asset condition and reliability.</p>
-            <div class="tags"><span>Sprinklers</span><span>Refurbishment</span><span>Maintenance</span></div>
-          </article>
-          <article class="project-card reveal">
-            <small>Fire System Refurbishment</small>
-            <h3>Easigas Vaalgas – Sprinkler Refurbishment</h3>
-            <p>Repainting, refurbishment and system maintenance support for industrial fire protection infrastructure.</p>
-            <div class="tags"><span>Maintenance</span><span>Fire systems</span><span>Industrial</span></div>
-          </article>
-        </div>
+    <section id="contact" class="contact-section">
+      <div>
+        <img src="logo.png" alt="EJay Projects logo" class="footer-logo">
+        <p>Engineering, mining and industrial support solutions built on safety, quality and performance.</p>
       </div>
-    </section>
-
-    <section id="resources" class="section">
-      <div class="container resources-grid">
-        <div class="section-intro reveal">
-          <span class="section-tag">Resources</span>
-          <h2>Documents for procurement, supplier registration and tender evaluation.</h2>
-          <p>Make it easy for procurement teams to review EJay Projects before requesting further documentation.</p>
-        </div>
-        <div class="resource-list reveal">
-          <a href="ejay-projects-company-profile.pdf" target="_blank" rel="noopener"><strong>Company Profile</strong><span>Download PDF</span></a>
-          <a href="#contact"><strong>B-BBEE Certificate</strong><span>Available on request</span></a>
-          <a href="#contact"><strong>CSD Summary</strong><span>Available on request</span></a>
-          <a href="#contact"><strong>Tax Compliance</strong><span>Available on request</span></a>
-          <a href="#contact"><strong>Safety Documentation</strong><span>Available on request</span></a>
-        </div>
-      </div>
-    </section>
-
-    <section id="quote" class="section quote-section">
-      <div class="container quote-grid">
-        <div class="section-intro reveal">
-          <span class="section-tag">Request a Quote</span>
-          <h2>Tell us what you need. We will respond with the right capability.</h2>
-          <p>
-            Complete the form below and it will prepare an email to admin@ejayprojects.com with your enquiry details.
-            For RFQs, drawings or tender documents, attach the file manually after the email opens.
-          </p>
-        </div>
-
-        <form id="quoteForm" class="quote-form reveal">
-          <div class="form-row">
-            <label>Full Name<input name="name" type="text" required></label>
-            <label>Company<input name="company" type="text" required></label>
-          </div>
-          <div class="form-row">
-            <label>Email<input name="email" type="email" required></label>
-            <label>Phone / WhatsApp<input name="phone" type="tel" required></label>
-          </div>
-          <div class="form-row">
-            <label>Service Required
-              <select name="service" required>
-                <option value="">Select a service</option>
-                <option>Mining & Industrial Support</option>
-                <option>Fire Protection Systems</option>
-                <option>Fuel, LPG & High-Risk Infrastructure</option>
-                <option>Construction & Civil Works</option>
-                <option>Maintenance & Shutdown Support</option>
-                <option>Technical Procurement & Project Support</option>
-                <option>Other</option>
-              </select>
-            </label>
-            <label>Project Location<input name="location" type="text" placeholder="Town / Site / Province"></label>
-          </div>
-          <div class="form-row">
-            <label>Estimated Start Date<input name="startDate" type="date"></label>
-            <label>RFQ / Tender File<input name="file" type="file" disabled><small>Attach documents after the email opens.</small></label>
-          </div>
-          <label>Brief Scope of Work<textarea name="message" rows="6" required placeholder="Briefly describe the work required, site conditions, quantities, urgency or tender reference."></textarea></label>
-          <button class="btn btn-primary" type="submit">Prepare Quote Request Email</button>
-          <p class="form-note" id="formNote" role="status"></p>
-        </form>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact-section">
-      <div class="container contact-grid">
-        <div class="section-intro reveal">
-          <span class="section-tag">Contact</span>
-          <h2>Let’s discuss your project, site requirement or supplier registration.</h2>
-          <p>EJay Projects is available for industrial, infrastructure, mining support and specialist fire protection enquiries.</p>
-        </div>
-        <div class="contact-card reveal">
-          <div><small>Company</small><strong>EJay Projects (Pty) Ltd</strong></div>
-          <div><small>Contact Person</small><strong>Ethan Mashaba</strong></div>
-          <div><small>Phone</small><strong><a href="tel:+27736847321">+27 (0)73 684 7321</a></strong></div>
-          <div><small>Email</small><strong><a href="mailto:admin@ejayprojects.com">admin@ejayprojects.com</a></strong></div>
-          <div><small>Address</small><strong>368 Coriander Street, Lotus Gardens X18, Pretoria</strong></div>
-          <div class="contact-actions">
-            <a class="btn btn-primary" href="mailto:admin@ejayprojects.com">Email Us</a>
-            <a class="btn btn-whatsapp" href="https://wa.me/27736847321?text=Hi%20EJay%20Projects%2C%20I%20would%20like%20to%20enquire%20about%20your%20services." target="_blank" rel="noopener">WhatsApp</a>
-          </div>
-        </div>
-      </div>
+      <div><h3>Quick Links</h3><a href="#about">About Us</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#quote">Request a Quote</a></div>
+      <div><h3>Contact Us</h3><a href="mailto:admin@ejayprojects.com">admin@ejayprojects.com</a><a href="tel:+27736847321">+27 73 684 7321</a><span>368 Coriander Street, Lotus Gardens X18, Pretoria, 0008</span></div>
     </section>
   </main>
 
-  <a class="floating-whatsapp" href="https://wa.me/27736847321?text=Hi%20EJay%20Projects%2C%20I%20would%20like%20to%20request%20a%20quote." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp</a>
+  <a class="float-btn call" href="tel:+27736847321">☎</a>
+  <a class="float-btn whatsapp" href="https://wa.me/27736847321" target="_blank" rel="noopener">☘</a>
+  <button class="float-btn top" id="topBtn">⌃</button>
 
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <img src="logo.png" alt="EJay Projects logo" class="footer-logo" />
-        <p>Engineering, mining and industrial support solutions across South Africa.</p>
-      </div>
-      <div>
-        <h4>Quick Links</h4>
-        <a href="#services">Services</a>
-        <a href="#projects">Projects</a>
-        <a href="#resources">Resources</a>
-        <a href="#quote">Request a Quote</a>
-      </div>
-      <div>
-        <h4>Contact</h4>
-        <a href="mailto:admin@ejayprojects.com">admin@ejayprojects.com</a>
-        <a href="tel:+27736847321">+27 (0)73 684 7321</a>
-        <span>Pretoria, South Africa</span>
-      </div>
-    </div>
-    <div class="container footer-bottom">
-      <p>© <span id="year"></span> EJay Projects (Pty) Ltd. All rights reserved.</p>
-    </div>
-  </footer>
-
+  <footer class="site-footer">© <span id="year"></span> EJay Projects (Pty) Ltd. All rights reserved.</footer>
   <script src="script.js"></script>
 </body>
 </html>

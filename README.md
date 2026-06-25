@@ -1,13 +1,10 @@
-# EJay Projects Website Version 2.0
+# EJay Projects Website Version 3.0
 
-Static website for EJay Projects (Pty) Ltd.
+Static website for EJay Projects (Pty) Ltd, designed for Vercel deployment.
 
-## Files
-- `index.html` - website structure and content
-- `styles.css` - premium responsive styling
-- `script.js` - menu, animations and quote form email preparation
-- `logo.png` - company logo
-- `ejay-projects-company-profile.pdf` - downloadable company profile
-
-## Deployment
-Push changes to the GitHub repository connected to Vercel. Vercel should automatically redeploy the website.
+## Update notes
+- Premium dark industrial interface inspired by the approved concept design.
+- Mining, industrial, fire protection, fuel/LPG and construction imagery included in `/assets`.
+- Request a Quote form opens a pre-filled email to `admin@ejayprojects.com`.
+- Project values removed from public project cards.
+- Company profile PDF included for download.

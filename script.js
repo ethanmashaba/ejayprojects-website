@@ -1,67 +1,54 @@
-const yearElement = document.getElementById("year");
-if (yearElement) yearElement.textContent = new Date().getFullYear();
+document.getElementById('year').textContent = new Date().getFullYear();
 
-const menuToggle = document.querySelector(".menu-toggle");
-const siteNav = document.querySelector(".site-nav");
-
-if (menuToggle && siteNav) {
-  menuToggle.addEventListener("click", () => {
-    const isOpen = siteNav.classList.toggle("open");
-    menuToggle.setAttribute("aria-expanded", String(isOpen));
-  });
-
-  siteNav.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      siteNav.classList.remove("open");
-      menuToggle.setAttribute("aria-expanded", "false");
-    });
-  });
+const navToggle = document.querySelector('.nav-toggle');
+const nav = document.querySelector('.main-nav');
+if (navToggle) {
+  navToggle.addEventListener('click', () => nav.classList.toggle('open'));
 }
 
-const revealItems = document.querySelectorAll(".reveal");
-if ("IntersectionObserver" in window) {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.12 });
-  revealItems.forEach((item) => observer.observe(item));
-} else {
-  revealItems.forEach((item) => item.classList.add("visible"));
+document.querySelectorAll('.main-nav a').forEach(link => {
+  link.addEventListener('click', () => nav.classList.remove('open'));
+});
+
+const topBtn = document.getElementById('topBtn');
+if (topBtn) {
+  topBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 }
 
-const quoteForm = document.getElementById("quoteForm");
-const formNote = document.getElementById("formNote");
-
+const quoteForm = document.getElementById('quoteForm');
 if (quoteForm) {
-  quoteForm.addEventListener("submit", (event) => {
+  quoteForm.addEventListener('submit', (event) => {
     event.preventDefault();
     const data = new FormData(quoteForm);
-    const subject = encodeURIComponent("Quote Request - EJay Projects Website");
-    const body = encodeURIComponent(
-`Good day EJay Projects,
+    const subject = encodeURIComponent('Request for Quote - EJay Projects Website');
+    const body = encodeURIComponent(`Good day EJay Projects Team,
 
-Please assist with the following quote request:
+Please assist with the following request:
 
-Full Name: ${data.get("name") || ""}
-Company: ${data.get("company") || ""}
-Email: ${data.get("email") || ""}
-Phone / WhatsApp: ${data.get("phone") || ""}
-Service Required: ${data.get("service") || ""}
-Project Location: ${data.get("location") || ""}
-Estimated Start Date: ${data.get("startDate") || ""}
+Name: ${data.get('name')}
+Company: ${data.get('company')}
+Email: ${data.get('email')}
+Phone / WhatsApp: ${data.get('phone')}
+Service Required: ${data.get('service')}
+Project Location: ${data.get('location') || 'Not specified'}
 
-Brief Scope of Work:
-${data.get("message") || ""}
+Brief Scope / Enquiry:
+${data.get('message')}
 
-Note: I will attach any RFQ, tender document, drawings or supporting files to this email if applicable.
-
-Regards`
-    );
+Kind regards,
+${data.get('name')}`);
     window.location.href = `mailto:admin@ejayprojects.com?subject=${subject}&body=${body}`;
-    if (formNote) formNote.textContent = "Your email app should open. Please attach any RFQ or drawings before sending.";
   });
 }
+
+const sections = document.querySelectorAll('main section[id], main[id]');
+const navLinks = document.querySelectorAll('.main-nav a');
+window.addEventListener('scroll', () => {
+  let current = 'top';
+  document.querySelectorAll('section[id]').forEach(section => {
+    if (scrollY >= section.offsetTop - 130) current = section.id;
+  });
+  navLinks.forEach(a => {
+    a.classList.toggle('active', a.getAttribute('href') === `#${current}` || (current === 'top' && a.getAttribute('href') === '#top'));
+  });
+});
